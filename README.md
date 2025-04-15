@@ -79,7 +79,7 @@ youtube_best_downloader/ffmpeg/bin/ffmpeg.exe
 
 ✅ Hỗ trợ tải video chất lượng cao nhất (có cả audio/video merge bằng FFmpeg)  
 ✅ Tải từ link video lẻ hoặc danh sách phát YouTube  
-✅ Lưu lịch sử tải vào `history.json`  
+✅ Lưu lịch sử tải vào `history.txt`  
 ✅ Tự động **bỏ qua video đã tải** trước đó (dựa vào ID video)  
 ✅ Giao diện dễ dùng với thông báo tiến trình rõ ràng
 
