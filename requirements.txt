@@ -1,0 +1,2 @@
+### 2. Tệp `requirements.txt`
+yt-dlp
