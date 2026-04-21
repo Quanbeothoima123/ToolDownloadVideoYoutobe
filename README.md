@@ -1,105 +1,108 @@
 # 🎬 YouTube Best Quality Downloader
 
-Một công cụ có giao diện đơn giản để tải video chất lượng cao từ **YouTube**, hỗ trợ cả video riêng lẻ lẫn danh sách phát (playlist). Công cụ còn tự động tránh tải trùng và lưu lịch sử tải xuống để dễ dàng kiểm tra.
+Công cụ tải video **YouTube** chất lượng cao nhất với giao diện đơn giản. Hỗ trợ video đơn lẻ lẫn playlist, tự động bỏ qua video đã tải, có nút dừng giữa chừng và progress bar theo dõi tiến trình.
+
+---
+
+## ✨ Tính năng
+
+- ⬇️ Tải video chất lượng cao nhất (video + audio merge qua FFmpeg → `.mp4`)
+- 📋 Hỗ trợ cả **link video đơn** lẫn **playlist**
+- ⏹ Nút **Dừng** để cancel bất kỳ lúc nào
+- 📊 **Progress bar** hiển thị tiến trình theo thời gian thực
+- ✅ Tự động **bỏ qua video đã tải** trước đó (lưu lịch sử bằng JSON)
+- 📋 Xem **lịch sử tải** trong cửa sổ riêng, có thể cuộn
+- 📁 Nút **Mở thư mục** output ngay sau khi tải xong
+- 🖥️ Giao diện không bị đứng (download chạy trên thread riêng)
+
+---
 
 ## 📁 Cấu trúc thư mục
 
 ```
-youtube_best_downloader/
-│
+ToolDownloadVideoYoutube/
 ├── ffmpeg/
 │   └── bin/
-│       └── ffmpeg.exe       ← FFmpeg bản local (bắt buộc)
-├── output/                  ← Nơi chứa các video sau khi tải
-├── history.json             ← Tự động tạo để lưu lịch sử video đã tải
-├── main.py                  ← File chính để chạy chương trình
-└── README.md                ← File hướng dẫn này
+│       └── ffmpeg.exe        ← Bắt buộc phải có
+├── output/                   ← Video tải về sẽ nằm ở đây
+├── history.json              ← Lịch sử tải (tự động tạo)
+├── main.py                   ← File chính để chạy
+├── requirements.txt
+└── README.md
 ```
 
 ---
 
-## ⚙️ Yêu cầu
+## 🛠️ Cài đặt
 
-- Python 3.7+
-- Các thư viện Python:
-  - `yt_dlp`
-  - `tkinter` (mặc định có sẵn trên Windows)
+### 1. Yêu cầu hệ thống
 
----
-
-## 🧩 Cài đặt
-
-### Bước 1: Cài Python và pip
-
-Tải và cài Python từ: https://www.python.org/downloads/
-
-Nhớ tích chọn **Add Python to PATH** khi cài.
+- **Python 3.8+** — tải tại [python.org](https://www.python.org/downloads/)
+  > ⚠️ Khi cài nhớ tích **"Add Python to PATH"**
+- **Windows** (khuyến nghị)
 
 ---
 
-### Bước 2: Cài thư viện cần thiết
+### 2. Cài thư viện
 
-Mở CMD tại thư mục chứa `main.py` và chạy:
+Mở terminal tại thư mục dự án:
 
 ```bash
-pip install yt-dlp
+pip install -r requirements.txt
 ```
 
 ---
 
-### Bước 3: Chuẩn bị FFmpeg
+### 3. Chuẩn bị FFmpeg
 
-1. Tải bản FFmpeg cho Windows tại: https://www.gyan.dev/ffmpeg/builds/
-2. Giải nén, sao chép file `ffmpeg.exe` vào:
+1. Tải FFmpeg tại: [gyan.dev/ffmpeg/builds](https://www.gyan.dev/ffmpeg/builds/)
+2. Giải nén, copy file `ffmpeg.exe` vào thư mục:
 
 ```
-youtube_best_downloader/ffmpeg/bin/ffmpeg.exe
+ffmpeg/bin/ffmpeg.exe
 ```
 
-> ⚠️ Không cần thêm vào PATH – chương trình đã tự nhận FFmpeg local.
+> Không cần cài FFmpeg vào PATH — chương trình tự nhận local.
 
 ---
 
-## 🚀 Cách sử dụng
+## ▶️ Cách sử dụng
 
-1. Mở file `main.py` (click đúp hoặc chạy `python main.py` từ CMD).
-2. Giao diện hiện ra:
+```bash
+python main.py
+```
 
-   - Dán link **video YouTube** hoặc **playlist**.
-   - Nhấn nút **"Tải video chất lượng cao"**.
-   - Quá trình tải sẽ hiển thị bên dưới.
-   - Video sau khi tải sẽ nằm trong thư mục `output/`.
+**Các bước thực hiện:**
 
-3. Để xem lịch sử các video đã tải:
-   - Nhấn nút **"Xem lịch sử đã tải"**.
-
----
-
-## 🧠 Tính năng nổi bật
-
-✅ Hỗ trợ tải video chất lượng cao nhất (có cả audio/video merge bằng FFmpeg)  
-✅ Tải từ link video lẻ hoặc danh sách phát YouTube  
-✅ Lưu lịch sử tải vào `history.txt`  
-✅ Tự động **bỏ qua video đã tải** trước đó (dựa vào ID video)  
-✅ Giao diện dễ dùng với thông báo tiến trình rõ ràng
+1. Dán link **video** hoặc **playlist** YouTube vào ô nhập
+2. Nhấn **⬇ Tải video**
+3. Theo dõi tiến trình qua progress bar và status bên dưới
+4. Nhấn **📁 Mở thư mục** để xem video vừa tải
+5. Nhấn **⏹ Dừng** nếu muốn cancel giữa chừng
 
 ---
 
-## 📌 Lưu ý
+## 🖼️ Giao diện
 
-- Tool chỉ hỗ trợ tải **video công khai** trên YouTube.
-- Đảm bảo kết nối internet ổn định để tránh lỗi khi tải danh sách dài.
-- Nếu gặp lỗi không có FFmpeg, hãy kiểm tra lại file `ffmpeg.exe` trong `ffmpeg/bin`.
-
----
-
-## 🧑‍💻 Tác giả
-
-Tool được xây dựng bằng Python, sử dụng `yt_dlp` và `tkinter`.  
-Được phát triển để phục vụ nhu cầu cá nhân tải video chất lượng cao mà không cần thao tác dòng lệnh.
+| Nút | Chức năng |
+|---|---|
+| ⬇ Tải video | Bắt đầu tải, UI không bị đứng |
+| ⏹ Dừng | Dừng quá trình tải ngay lập tức |
+| 📋 Lịch sử | Xem danh sách URL đã tải |
+| 📁 Mở thư mục | Mở thư mục `output/` trong Explorer |
 
 ---
 
-## ❤️ Nếu bạn thấy tool hữu ích...
+## ⚠️ Lưu ý
 
-Hãy chia sẻ cho bạn bè hoặc góp ý để công cụ ngày càng tốt hơn!
+- Chỉ tải được **video công khai** trên YouTube.
+- Video sau khi tải nằm trong thư mục `output/`, định dạng `.mp4`.
+- Lịch sử tải lưu tại `history.json` — xóa file này để reset lịch sử.
+- Cần kết nối internet ổn định, đặc biệt khi tải playlist dài.
+- Nếu gặp lỗi FFmpeg, kiểm tra lại `ffmpeg/bin/ffmpeg.exe` có tồn tại chưa.
+
+---
+
+## 📜 License
+
+Quenbeothoima License © 2025
