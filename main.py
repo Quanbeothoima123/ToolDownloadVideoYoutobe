@@ -11,6 +11,10 @@ HISTORY_FILE = "history.json"
 COOKIES_FILE = "cookies.txt"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
+# Thêm ffmpeg vào PATH hệ thống (giống tool Shorts đang hoạt động tốt)
+_ffmpeg_abs = os.path.abspath(FFMPEG_DIR)
+os.environ["PATH"] = _ffmpeg_abs + os.pathsep + os.environ.get("PATH", "")
+
 stop_flag = False
 BROWSERS = ["chrome", "firefox", "edge", "brave", "opera", "chromium", "vivaldi"]
 cookie_mode = "none"
@@ -136,8 +140,11 @@ def download_video(url):
         'no_warnings': True,
         'format': 'bestvideo+bestaudio/best',
         'outtmpl': os.path.join(OUTPUT_DIR, '%(title)s.%(ext)s'),
-        'ffmpeg_location': FFMPEG_DIR,
         'merge_output_format': 'mp4',
+        'postprocessors': [{
+            'key': 'FFmpegVideoConvertor',
+            'preferedformat': 'mp4',
+        }],
     }
     with YoutubeDL(ydl_opts) as ydl:
         info = ydl.extract_info(url, download=True)
