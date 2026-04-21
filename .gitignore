@@ -1,0 +1,22 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# FFmpeg binaries
+ffmpeg/bin/
+
+# Download data
+data/history.json
+__temp_downloads__/
+
+# Build & dist
+*.zip
+*.exe
+build/
+dist/
+*.spec
