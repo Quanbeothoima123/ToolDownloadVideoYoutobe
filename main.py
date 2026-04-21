@@ -11,6 +11,8 @@ HISTORY_FILE = "history.json"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 stop_flag = False
+BROWSERS = ["chrome", "firefox", "edge", "brave", "opera", "chromium", "vivaldi"]
+selected_browser = None  # None = không dùng cookies
 
 
 # ─── History (dùng JSON thay vì txt) ──────────────────────────────────────────
@@ -41,9 +43,15 @@ def add_to_history(video_url):
 
 # ─── Core logic ───────────────────────────────────────────────────────────────
 
+def get_ydl_opts_base():
+    opts = {'quiet': True}
+    if selected_browser:
+        opts['cookiesfrombrowser'] = (selected_browser,)
+    return opts
+
 def get_video_urls(url):
     ydl_opts = {
-        'quiet': True,
+        **get_ydl_opts_base(),
         'extract_flat': True,
         'skip_download': True,
     }
@@ -63,7 +71,7 @@ def get_video_urls(url):
 
 def download_video(url):
     ydl_opts = {
-        'quiet': True,
+        **get_ydl_opts_base(),
         'no_warnings': True,
         'format': 'bestvideo+bestaudio/best',
         'outtmpl': os.path.join(OUTPUT_DIR, '%(title)s.%(ext)s'),
@@ -179,12 +187,21 @@ def open_output_folder():
     abs_path = os.path.abspath(OUTPUT_DIR)
     os.startfile(abs_path)
 
+def on_browser_change(event=None):
+    global selected_browser
+    val = browser_var.get()
+    selected_browser = val if val != "Không dùng cookies" else None
+    lbl_browser_status.config(
+        text=f"🍪 Đang dùng cookies từ: {selected_browser}" if selected_browser else "⚠ Không dùng cookies (có thể bị chặn)",
+        fg="green" if selected_browser else "orange"
+    )
+
 
 # ─── GUI ──────────────────────────────────────────────────────────────────────
 
 root = tk.Tk()
 root.title("YouTube Best Quality Downloader")
-root.geometry("560x280")
+root.geometry("600x320")
 root.resizable(False, False)
 
 frame = tk.Frame(root)
@@ -193,6 +210,21 @@ frame.pack(pady=15, padx=20, fill="x")
 tk.Label(frame, text="Nhập link video hoặc playlist:").pack(anchor="w")
 url_entry = tk.Entry(frame, width=70)
 url_entry.pack(pady=5, fill="x")
+
+# ── Chọn trình duyệt để lấy cookies ──
+browser_frame = tk.Frame(frame)
+browser_frame.pack(anchor="w", pady=(0, 4))
+tk.Label(browser_frame, text="Trình duyệt lấy cookies:").pack(side="left")
+browser_var = tk.StringVar(value="Không dùng cookies")
+browser_combo = ttk.Combobox(browser_frame, textvariable=browser_var,
+                              values=["Không dùng cookies"] + BROWSERS,
+                              state="readonly", width=18)
+browser_combo.pack(side="left", padx=6)
+browser_combo.bind("<<ComboboxSelected>>", on_browser_change)
+lbl_browser_status = tk.Label(browser_frame,
+                               text="⚠ Không dùng cookies (có thể bị chặn)",
+                               fg="orange")
+lbl_browser_status.pack(side="left", padx=4)
 
 btn_frame = tk.Frame(frame)
 btn_frame.pack(pady=8)

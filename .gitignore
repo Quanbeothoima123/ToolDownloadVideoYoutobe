@@ -1,18 +1,23 @@
 # Virtual environment
+.venv/
 venv/
+ENV/
 
 # Python cache
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+**/__pycache__/
+*.py[cod]
+*$py.class
 
 # FFmpeg binaries
+ffmpeg/
 ffmpeg/bin/
 
 # Download data
-data/history.json
+history.json
+history.txt
+data/
 __temp_downloads__/
+output/
 
 # Build & dist
 *.zip
@@ -20,3 +25,7 @@ __temp_downloads__/
 build/
 dist/
 *.spec
+
+# IDEs
+.vscode/
+.idea/
