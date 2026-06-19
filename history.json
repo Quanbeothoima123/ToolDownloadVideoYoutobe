@@ -1,18 +1,757 @@
 [
-  "yA2_gxJiXdA",
-  "QcRd6xnsaXE",
-  "ltKsJ2Lxqa0",
-  "U-E7TVNF4WM",
-  "kzbJkS4n4LQ",
-  "EEOG0fq8pNk",
-  "6yHkMP6pPf4",
-  "fhvqqhItfEg",
-  "gbnAIlsrZnA",
-  "b-qPcch8d_U",
-  "10QuIffIRgc",
-  "uTmFiQoX9V8",
-  "nMpxaQe1DnM",
-  "FTjUtxwMaeo",
-  "kJ-4AGXA39g",
-  "sVFqS4Z-8sM"
+  {
+    "title": "Course: Node.js Backend Architecture - Giới thiệu dự án, kinh nghiệm, kỹ năng và tâm sự NGHỀ | (1)",
+    "url": "https://www.youtube.com/watch?v=5keK7PRH9pE",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Course： Node.js Backend Architecture - Giới thiệu dự án, kinh nghiệm, kỹ năng và tâm sự NGHỀ ｜ (1).mp4"
+  },
+  {
+    "title": "Section 2: Node.js Backend Architecture - Những folders và packages cần thiết khi khởi tạo Project!",
+    "url": "https://www.youtube.com/watch?v=qpIfPitAIX0",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 2： Node.js Backend Architecture - Những folders và packages cần thiết khi khởi tạo Project!.mp4"
+  },
+  {
+    "title": "Section 3: Connect MongoDB to Node.js Using Mongoose và 7 điều cần triển khai trong hệ thống.",
+    "url": "https://www.youtube.com/watch?v=TiMiJazU4Pc",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 3： Connect MongoDB to Node.js Using Mongoose và 7 điều cần triển khai trong hệ thống..mp4"
+  },
+  {
+    "title": "Section 4: Lịch sử của .env và cách kết hợp env và configs cho dự án nhiều môi trường và Members",
+    "url": "https://www.youtube.com/watch?v=jnxsMU5hjqs",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 4： Lịch sử của .env và cách kết hợp env và configs cho dự án nhiều môi trường và Members.mp4"
+  },
+  {
+    "title": "Section 5: Api Sign-up Shop (1)",
+    "url": "https://www.youtube.com/watch?v=mkol2daN7FU",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 5： Api Sign-up Shop (1).mp4"
+  },
+  {
+    "title": "Section 5: Api Sign-up Shop (FULL) triển khai thuật toán RSA và JWT cho hai level. (bản thiếu)",
+    "url": "https://www.youtube.com/watch?v=EkFGhtrXX0w",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 5： Api Sign-up Shop (FULL) triển khai thuật toán RSA và JWT cho hai level. (bản thiếu).mp4"
+  },
+  {
+    "title": "Section 5: Reup Sign-up Shop (FULL) thuật toán RSA và JWT cho hai level bổ sung keyToken, authUtils",
+    "url": "https://www.youtube.com/watch?v=Ha_LFuZ5x1U",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 5： Reup Sign-up Shop (FULL) thuật toán RSA và JWT cho hai level bổ sung keyToken, authUtils.mp4"
+  },
+  {
+    "title": "Section 6:  Custom Dynamic Middleware for ApiKey and Permissions",
+    "url": "https://www.youtube.com/watch?v=nQxEwBAcYrI",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 6：  Custom Dynamic Middleware for ApiKey and Permissions.mp4"
+  },
+  {
+    "title": "Section 7: Xử lý ErrorHandler trong API | Course Node.js Backend Architecture",
+    "url": "https://www.youtube.com/watch?v=hyF1S0nFS7A",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 7： Xử lý ErrorHandler trong API ｜ Course Node.js Backend Architecture.mp4"
+  },
+  {
+    "title": "Section 8:  Make Your API Response use class |  Course Node.js Backend Architecture",
+    "url": "https://www.youtube.com/watch?v=mvMEn5ofnlQ",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 8：  Make Your API Response use class ｜  Course Node.js Backend Architecture.mp4"
+  },
+  {
+    "title": "Section 9: Login Shop Api | Course Node.js Backend eCommerce",
+    "url": "https://www.youtube.com/watch?v=0O1PlClhmIc",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 9： Login Shop Api ｜ Course Node.js Backend eCommerce.mp4"
+  },
+  {
+    "title": "Section 10: Logout vs Authentication | Course Node.js Backend eCommerce",
+    "url": "https://www.youtube.com/watch?v=vXhNEryxP0E",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 10： Logout vs Authentication ｜ Course Node.js Backend eCommerce.mp4"
+  },
+  {
+    "title": "Section 11: Xử lý token được sử dụng trái phép và cách xử lý | RefreshToken",
+    "url": "https://www.youtube.com/watch?v=S8yvvRag6Kk",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 11： Xử lý token được sử dụng trái phép và cách xử lý ｜ RefreshToken.mp4"
+  },
+  {
+    "title": "Section 12: Schema Product Ecommerce Cách thiết kế hàng triệu sản phẩm và tối ưu hóa truy vấn NHANH",
+    "url": "https://www.youtube.com/watch?v=j1Qb_qMNXzE",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 12： Schema Product Ecommerce Cách thiết kế hàng triệu sản phẩm và tối ưu hóa truy vấn NHANH.mp4"
+  },
+  {
+    "title": "Section13: API Product use Factory Pattern | Create new Product for level 1,2",
+    "url": "https://www.youtube.com/watch?v=57fGKY_zbT4",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section13： API Product use Factory Pattern ｜ Create new Product for level 1,2.mp4"
+  },
+  {
+    "title": "Section14: Api Service Products (Optimal For LV.xxx) | Nâng cao cấu trúc Product",
+    "url": "https://www.youtube.com/watch?v=SCSCiPRba50",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section14： Api Service Products (Optimal For LV.xxx) ｜ Nâng cao cấu trúc Product.mp4"
+  },
+  {
+    "title": "Section 11( version 2 ): FIXED Bug bị sai và tối ưu hơn so với phiên bản cũ",
+    "url": "https://www.youtube.com/watch?v=sR3YViTbFJ8",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 11( version 2 )： FIXED Bug bị sai và tối ưu hơn so với phiên bản cũ.mp4"
+  },
+  {
+    "title": "Section 15: Thiết kế Api Service Product kết hợp giữa Factory và Strategy quá hiệu quả (Video Bonus)",
+    "url": "https://www.youtube.com/watch?v=T5rkuB8ca_g",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 15： Thiết kế Api Service Product kết hợp giữa Factory và Strategy quá hiệu quả (Video Bonus).mp4"
+  },
+  {
+    "title": "Section 16: Add tính năng isDraft, isPublish, unPublish và bổ sung schema Product Service API",
+    "url": "https://www.youtube.com/watch?v=ZD5cWfsZO3A",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 16： Add tính năng isDraft, isPublish, unPublish và bổ sung schema Product Service API.mp4"
+  },
+  {
+    "title": "Section 17: Tính năng còn lại, findAll, findOne, selectData, unSelectData trong Product Service API",
+    "url": "https://www.youtube.com/watch?v=pKbdGrQGVJk",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 17： Tính năng còn lại, findAll, findOne, selectData, unSelectData trong Product Service API.mp4"
+  },
+  {
+    "title": "Section 18: Update với POST, PUT, PATCH trong Product Service API",
+    "url": "https://www.youtube.com/watch?v=w3dpcns7zj4",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 18： Update với POST, PUT, PATCH trong Product Service API.mp4"
+  },
+  {
+    "title": "Section 19: Inventories Model vs Services",
+    "url": "https://www.youtube.com/watch?v=VYOlDxdcehY",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 19： Inventories Model vs Services.mp4"
+  },
+  {
+    "title": "Section 20: Discount Model in eCommerce",
+    "url": "https://www.youtube.com/watch?v=-jhjxo7TW1g",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 20： Discount Model in eCommerce.mp4"
+  },
+  {
+    "title": "Section 21: Discount Service in eCommerce with 6 features",
+    "url": "https://www.youtube.com/watch?v=77kTtMdnqek",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 21： Discount Service in eCommerce with 6 features.mp4"
+  },
+  {
+    "title": "Section 22: Discount Service in eCommerce Part 2 - FULL",
+    "url": "https://www.youtube.com/watch?v=nVH56wVEDCg",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 22： Discount Service in eCommerce Part 2 - FULL.mp4"
+  },
+  {
+    "title": "Section 24: Cart Service Api | Update, reduce, increase product [User] Part 2",
+    "url": "https://www.youtube.com/watch?v=Ezf_10SsfWs",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 24： Cart Service Api ｜ Update, reduce, increase product [User] Part 2.mp4"
+  },
+  {
+    "title": "Section 23: Cart Service in eCommerce Part 1 | Cart Model vs add product to cart [User]",
+    "url": "https://www.youtube.com/watch?v=HQkAB2z4OcI",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 23： Cart Service in eCommerce Part 1 ｜ Cart Model vs add product to cart [User].mp4"
+  },
+  {
+    "title": "Section 25: Order Service Api (part 1)",
+    "url": "https://www.youtube.com/watch?v=rpoQjTm9In4",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 25： Order Service Api (part 1).mp4"
+  },
+  {
+    "title": "Section 26: Order service Part 2 | Tiếp đến là Redis chuyên sâu.",
+    "url": "https://www.youtube.com/watch?v=mswayRA-870",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 26： Order service Part 2 ｜ Tiếp đến là Redis chuyên sâu..mp4"
+  },
+  {
+    "title": "Section 27: Học Redis vui lòng xem qua mẩu chuyện này của Antirez cha đẻ nguồn cảm hứng.",
+    "url": "https://www.youtube.com/watch?v=QEUQsBXRFJk",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 27： Học Redis vui lòng xem qua mẩu chuyện này của Antirez cha đẻ nguồn cảm hứng..mp4"
+  },
+  {
+    "title": "Section 28: Hôm nay tôi đi phỏng vấn về Redis có 5 câu hỏi dành cho tôi và bạn | Node.js backend",
+    "url": "https://www.youtube.com/watch?v=u5-flcmINc4",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 28： Hôm nay tôi đi phỏng vấn về Redis có 5 câu hỏi dành cho tôi và bạn ｜ Node.js backend.mp4"
+  },
+  {
+    "title": "Section 29: String Redis | Cấu trúc dữ liệu, lệnh phổ biến và kịch bản nào sử dụng? | Redis backend",
+    "url": "https://www.youtube.com/watch?v=X7NiSVo_NHE",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 29： String Redis ｜ Cấu trúc dữ liệu, lệnh phổ biến và kịch bản nào sử dụng？ ｜ Redis backend.mp4"
+  },
+  {
+    "title": "Section 30: Hash Redis | Cấu trúc dữ liệu, lệnh phổ biến và kịch bản nào sử dụng? | Redis backend",
+    "url": "https://www.youtube.com/watch?v=uz73HbycDLM",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 30： Hash Redis ｜ Cấu trúc dữ liệu, lệnh phổ biến và kịch bản nào sử dụng？ ｜ Redis backend.mp4"
+  },
+  {
+    "title": "Section 31: List Redis | Cấu trúc dữ liệu, lệnh phổ biến và kịch bản nào sử dụng? | Redis backend",
+    "url": "https://www.youtube.com/watch?v=zwDT1KDlNF8",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 31： List Redis ｜ Cấu trúc dữ liệu, lệnh phổ biến và kịch bản nào sử dụng？ ｜ Redis backend.mp4"
+  },
+  {
+    "title": "34| Redis Sets | Dùng để phát triển chức năng like, tìm bạn chung như facebook và các lệnh phổ biến",
+    "url": "https://www.youtube.com/watch?v=SLGE0L-Ndo8",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\34｜ Redis Sets ｜ Dùng để phát triển chức năng like, tìm bạn chung như facebook và các lệnh phổ biến.mp4"
+  },
+  {
+    "title": "Section 35: Redis Zset | Các lệnh phổ biến sử dụng tổng hợp sản phẩm bán chạy, lượt xem và theo dõi",
+    "url": "https://www.youtube.com/watch?v=8fw-VnP3Zq0",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 35： Redis Zset ｜ Các lệnh phổ biến sử dụng tổng hợp sản phẩm bán chạy, lượt xem và theo dõi.mp4"
+  },
+  {
+    "title": "Section 36: Transaction Redis | Cách sử dụng trong dự án LỚN",
+    "url": "https://www.youtube.com/watch?v=63x7fIW5CkQ",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 36： Transaction Redis ｜ Cách sử dụng trong dự án LỚN.mp4"
+  },
+  {
+    "title": "Section 37:  Pub/Sub (Publish/Subscribe) | Redis | Ứng dụng vào shopDEV",
+    "url": "https://www.youtube.com/watch?v=U_Zy4ec_Kes",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 37：  Pub⧸Sub (Publish⧸Subscribe) ｜ Redis ｜ Ứng dụng vào shopDEV.mp4"
+  },
+  {
+    "title": "Section 38: Triển khai hệ thống Nested Comments trong shopDEV eCommerce | create vs list comments",
+    "url": "https://www.youtube.com/watch?v=CVF8QXumS00",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 38： Triển khai hệ thống Nested Comments trong shopDEV eCommerce ｜ create vs list comments.mp4"
+  },
+  {
+    "title": "Section 39: Cách tính công thức và deleted comment trong shopDEV eCommerce | Nested Set Model",
+    "url": "https://www.youtube.com/watch?v=2rYyw1FSIPc",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 39： Cách tính công thức và deleted comment trong shopDEV eCommerce ｜ Nested Set Model.mp4"
+  },
+  {
+    "title": "Section 40: Triển khai hệ thống Notifications eCommerce ShopDEV | Phần 1",
+    "url": "https://www.youtube.com/watch?v=HCTET_WQR1I",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 40： Triển khai hệ thống Notifications eCommerce ShopDEV ｜ Phần 1.mp4"
+  },
+  {
+    "title": "Section 41: Phân tích hành vi User áp dụng PUSH or PULL trong task Notification System (quan trọng).",
+    "url": "https://www.youtube.com/watch?v=7vFWLGBihhE",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 41： Phân tích hành vi User áp dụng PUSH or PULL trong task Notification System (quan trọng)..mp4"
+  },
+  {
+    "title": "Section 42: Notifications Service  | Tiếp đến là tách Message Queue System",
+    "url": "https://www.youtube.com/watch?v=dAefZUW3fOQ",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 42： Notifications Service  ｜ Tiếp đến là tách Message Queue System.mp4"
+  },
+  {
+    "title": "Section 43: Kafka Message Queue | Microservice System",
+    "url": "https://www.youtube.com/watch?v=_YT0MsFszhY",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 43： Kafka Message Queue ｜ Microservice System.mp4"
+  },
+  {
+    "title": "Section 44: RabbitMQ Message Queue | Microservice System",
+    "url": "https://www.youtube.com/watch?v=DWr5zV_TmF8",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 44： RabbitMQ Message Queue ｜ Microservice System.mp4"
+  },
+  {
+    "title": "Section 45: Tách dự án với kiến trúc Microservice System, test rabbitmq vs jest | Level Nâng cao",
+    "url": "https://www.youtube.com/watch?v=eo6RJsQTOqI",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 45： Tách dự án với kiến trúc Microservice System, test rabbitmq vs jest ｜ Level Nâng cao.mp4"
+  },
+  {
+    "title": "Section 46: Integration Testing with Jest vs Mongodb | Microservice System",
+    "url": "https://www.youtube.com/watch?v=0pgx_XUjddo",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 46： Integration Testing with Jest vs Mongodb ｜ Microservice System.mp4"
+  },
+  {
+    "title": "Section 47: [start server] First step in Microservice vs Message Queue | Microservice System | Lvxx",
+    "url": "https://www.youtube.com/watch?v=qw1z8hJRzuc",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 47： [start server] First step in Microservice vs Message Queue ｜ Microservice System ｜ Lvxx.mp4"
+  },
+  {
+    "title": "Section 48: Xử lý Message Error or TTL (Time To Live) trong Message Queue thế nào? | Kiến trúc MQ",
+    "url": "https://www.youtube.com/watch?v=nDxAiAB4UJg",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 48： Xử lý Message Error or TTL (Time To Live) trong Message Queue thế nào？ ｜ Kiến trúc MQ.mp4"
+  },
+  {
+    "title": "Section 49: Xử lý message khi gặp sự cố MQ server die (TTL) thực hành",
+    "url": "https://www.youtube.com/watch?v=muR4HURM0k4",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 49： Xử lý message khi gặp sự cố MQ server die (TTL) thực hành.mp4"
+  },
+  {
+    "title": "Section 50: QUAN TRỌNG và dành cho Level cao về cách Xử lý error message trong kiến trúc MQ",
+    "url": "https://www.youtube.com/watch?v=lZXkli4AhGA",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 50： QUAN TRỌNG và dành cho Level cao về cách Xử lý error message trong kiến trúc MQ.mp4"
+  },
+  {
+    "title": "Section 51: Message Ordering in Pub/Sub or Queues | Microservices Backend",
+    "url": "https://www.youtube.com/watch?v=tVawGVrJPak",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 51： Message Ordering in Pub⧸Sub or Queues ｜ Microservices Backend.mp4"
+  },
+  {
+    "title": "Section 52: Message Ordering | Microservice Backend | #2",
+    "url": "https://www.youtube.com/watch?v=nrFEJLiU-l0",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 52： Message Ordering ｜ Microservice Backend ｜ #2.mp4"
+  },
+  {
+    "title": "Section 53: Thực hành về Message Ordered với hai tình huống | RabbitMQ | Microservice Backend",
+    "url": "https://www.youtube.com/watch?v=XPaqZek9q-A",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 53： Thực hành về Message Ordered với hai tình huống ｜ RabbitMQ ｜ Microservice Backend.mp4"
+  },
+  {
+    "title": "Section 54: MySQL Setup master slave | SQL",
+    "url": "https://www.youtube.com/watch?v=ikH6_39OF7k",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 54： MySQL Setup master slave ｜ SQL.mp4"
+  },
+  {
+    "title": "Section 55: Thực hành tự tạo dữ liệu test 10.000.000 records trong MySQL cho level nho nhỏ xinh xinh",
+    "url": "https://www.youtube.com/watch?v=UjVTDWdPL0U",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 55： Thực hành tự tạo dữ liệu test 10.000.000 records trong MySQL cho level nho nhỏ xinh xinh.mp4"
+  },
+  {
+    "title": "Section 56: Thực hành tự tạo dữ liệu test 10.000.000 records trong MySQL cho level 2,3 | Phần 2",
+    "url": "https://www.youtube.com/watch?v=UFfn1dHbfCs",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 56： Thực hành tự tạo dữ liệu test 10.000.000 records trong MySQL cho level 2,3 ｜ Phần 2.mp4"
+  },
+  {
+    "title": "Urgent: HOT FIX. Anh em trong MEMBER chú ý. Tại hạ nhận lỗi.",
+    "url": "https://www.youtube.com/watch?v=2K3Pk-_pFSc",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Urgent： HOT FIX. Anh em trong MEMBER chú ý. Tại hạ nhận lỗi..mp4"
+  },
+  {
+    "title": "Section 57: x-api-key anh em hỏi, tôi đáp ???",
+    "url": "https://www.youtube.com/watch?v=--yEOnZBB8o",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 57： x-api-key anh em hỏi, tôi đáp ？？？.mp4"
+  },
+  {
+    "title": "Section 58: Partition Database, Rất quan trọng (1)",
+    "url": "https://www.youtube.com/watch?v=KZ199lfI7N0",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 58： Partition Database, Rất quan trọng (1).mp4"
+  },
+  {
+    "title": "Section 59: Partition Database dành cho Level cao, DBA | Phần 2",
+    "url": "https://www.youtube.com/watch?v=eEt3yuz3S_I",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 59： Partition Database dành cho Level cao, DBA ｜ Phần 2.mp4"
+  },
+  {
+    "title": "Section 60: Index MySQL những sai lầm nên tránh",
+    "url": "https://www.youtube.com/watch?v=GSonUVsFFJ8",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 60： Index MySQL những sai lầm nên tránh.mp4"
+  },
+  {
+    "title": "Section 61: Intro Cloud vs Upload Service For Api (1)",
+    "url": "https://www.youtube.com/watch?v=dFIhLYlNXtw",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 61： Intro Cloud vs Upload Service For Api (1).mp4"
+  },
+  {
+    "title": "Section 62: Use multer vs cloudinary upload File (2)",
+    "url": "https://www.youtube.com/watch?v=fUO6VF394eA",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 62： Use multer vs cloudinary upload File (2).mp4"
+  },
+  {
+    "title": "Section 64: Amazon Web Service (AWS) Intro vs Regis...",
+    "url": "https://www.youtube.com/watch?v=zPMdzBH61PE",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 64： Amazon Web Service (AWS) Intro vs Regis....mp4"
+  },
+  {
+    "title": "Section 65: Amazon Web Service (AWS) Setup S3 Bucket vs Security (2)",
+    "url": "https://www.youtube.com/watch?v=MDQEu7-GZMY",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 65： Amazon Web Service (AWS) Setup S3 Bucket vs Security (2).mp4"
+  },
+  {
+    "title": "Section 66: Upload Images to S3 from Node Back End | AWS",
+    "url": "https://www.youtube.com/watch?v=APZCs7lALQk",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 66： Upload Images to S3 from Node Back End ｜ AWS.mp4"
+  },
+  {
+    "title": "Section 67: AWS - S3 Triển khai Service backend bảo mật Link S3 và test performance Url Speed",
+    "url": "https://www.youtube.com/watch?v=HnF6tfUE0gk",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 67： AWS - S3 Triển khai Service backend bảo mật Link S3 và test performance Url Speed.mp4"
+  },
+  {
+    "title": "Section 68: Setup Cloudfront với S3 | AWS Pro",
+    "url": "https://www.youtube.com/watch?v=dFe7jE5Otr4",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 68： Setup Cloudfront với S3 ｜ AWS Pro.mp4"
+  },
+  {
+    "title": "Section 69: AWS CloudFront Bảo mật File ngăn cấm hành vi sao chép phía BackEnd",
+    "url": "https://www.youtube.com/watch?v=pSwROxV2l8I",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 69： AWS CloudFront Bảo mật File ngăn cấm hành vi sao chép phía BackEnd.mp4"
+  },
+  {
+    "title": "Section 70: Triển khai toàn diện về EC2 vũ khí sắc bén của BackEnd",
+    "url": "https://www.youtube.com/watch?v=-k5jfYrtQJo",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 70： Triển khai toàn diện về EC2 vũ khí sắc bén của BackEnd.mp4"
+  },
+  {
+    "title": "Section 71: Setup EC2 + Mysql với Linux. Tạo quyền, quản lý database bảo mật...",
+    "url": "https://www.youtube.com/watch?v=QxB3ifUaLDA",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 71： Setup EC2 + Mysql với Linux. Tạo quyền, quản lý database bảo mật....mp4"
+  },
+  {
+    "title": "Section 72: Import Mysql local to EC2 và cho phép truy cập mysql từ xa | Làm chủ AWS",
+    "url": "https://www.youtube.com/watch?v=XvbqDLfbczo",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 72： Import Mysql local to EC2 và cho phép truy cập mysql từ xa ｜ Làm chủ AWS.mp4"
+  },
+  {
+    "title": "Section 73: Triển khai CI/CD từ GitHub và EC2 (AWS)",
+    "url": "https://www.youtube.com/watch?v=2ZYH1FuZ0uY",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 73： Triển khai CI⧸CD từ GitHub và EC2 (AWS).mp4"
+  },
+  {
+    "title": "Section 74: Reverse Proxy Nginx vs EC2 | Next setup Domain Shopdev.com",
+    "url": "https://www.youtube.com/watch?v=UfV1FUtVypc",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 74： Reverse Proxy Nginx vs EC2 ｜ Next setup Domain Shopdev.com.mp4"
+  },
+  {
+    "title": "Section 75: Add domain shopdev.com to NGINX với SSL port (443)",
+    "url": "https://www.youtube.com/watch?v=67cAjD-twoU",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 75： Add domain shopdev.com to NGINX với SSL port (443).mp4"
+  },
+  {
+    "title": "Section 76: Thiết kế CSDL MySQL về phân quyền và cách query như thế nào trong shopDEV ecommerce.",
+    "url": "https://www.youtube.com/watch?v=lmCaDqakf6o",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 76： Thiết kế CSDL MySQL về phân quyền và cách query như thế nào trong shopDEV ecommerce..mp4"
+  },
+  {
+    "title": "Section 77: Thiết kế quyền trong hệ thống thương mại điện tử (Phần 1)",
+    "url": "https://www.youtube.com/watch?v=2w4TQ7EV-84",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 77： Thiết kế quyền trong hệ thống thương mại điện tử (Phần 1).mp4"
+  },
+  {
+    "title": "Section 78: Thiết kế quyền trong hệ thống thương mại điện tử (Phần 2)",
+    "url": "https://www.youtube.com/watch?v=2zrU3NAY0jo",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 78： Thiết kế quyền trong hệ thống thương mại điện tử (Phần 2).mp4"
+  },
+  {
+    "title": "Section 79: Thiết kế quyền trong hệ thống thương mại điện tử (Hoàn thành source thực tế)",
+    "url": "https://www.youtube.com/watch?v=3jIDM99037U",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 79： Thiết kế quyền trong hệ thống thương mại điện tử (Hoàn thành source thực tế).mp4"
+  },
+  {
+    "title": "Section 80: Thiết kế THEO DÕI LOGs trong hệ thống thương mại điện tử | Phần 2",
+    "url": "https://www.youtube.com/watch?v=8LicTFZvPzE",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 80： Thiết kế THEO DÕI LOGs trong hệ thống thương mại điện tử ｜ Phần 2.mp4"
+  },
+  {
+    "title": "Section 81: Hoàn thành hệ thống tracking Logs với traceId hoàn chỉnh cho level 4, 5",
+    "url": "https://www.youtube.com/watch?v=bzCKJ3HorXc",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 81： Hoàn thành hệ thống tracking Logs với traceId hoàn chỉnh cho level 4, 5.mp4"
+  },
+  {
+    "title": "Section 82: Shop Registration | Quy trình send OTP vs verify thông qua Email với SMTP (AWS) (1)",
+    "url": "https://www.youtube.com/watch?v=Y-pqDc3Xl9Q",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 82： Shop Registration ｜ Quy trình send OTP vs verify thông qua Email với SMTP (AWS) (1).mp4"
+  },
+  {
+    "title": "Section 83: Triển khai module đăng ký thành viên ShopDEV thông qua verify Email OTP",
+    "url": "https://www.youtube.com/watch?v=A78uC7AfZPU",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 83： Triển khai module đăng ký thành viên ShopDEV thông qua verify Email OTP.mp4"
+  },
+  {
+    "title": "Section: 84: Phương pháp tốt nhất connect redis vs node.js tin cậy cao trong backend",
+    "url": "https://www.youtube.com/watch?v=4s3gHFS3aO8",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section： 84： Phương pháp tốt nhất connect redis vs node.js tin cậy cao trong backend.mp4"
+  },
+  {
+    "title": "Section 85: Share Source giao diện shopDEV (react+vite) và app mobile (iOS + Android)  Link download",
+    "url": "https://www.youtube.com/watch?v=A-tXuWpyBss",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 85： Share Source giao diện shopDEV (react+vite) và app mobile (iOS + Android)  Link download.mp4"
+  },
+  {
+    "title": "Section 86: User Registration | Verify OTP vs Create New User (2)",
+    "url": "https://www.youtube.com/watch?v=d4Xy6MyaaCI",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 86： User Registration ｜ Verify OTP vs Create New User (2).mp4"
+  },
+  {
+    "title": "Section 87: Senior - Thiết kế dữ liệu cho SKU, SPU trong Product (1)",
+    "url": "https://www.youtube.com/watch?v=RnhqkmHG4vE",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 87： Senior - Thiết kế dữ liệu cho SKU, SPU trong Product (1).mp4"
+  },
+  {
+    "title": "Section 88: Triển khai và giải thích schema spu và sku model [Tối ưu SKU]",
+    "url": "https://www.youtube.com/watch?v=gLo4guKxgfg",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 88： Triển khai và giải thích schema spu và sku model [Tối ưu SKU].mp4"
+  },
+  {
+    "title": "Section 89: Triển khai Service spu và sku hiệu quả tối ưu | Nhà Nội Hơi Ồn hihi",
+    "url": "https://www.youtube.com/watch?v=f5pK9_A-XTk",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 89： Triển khai Service spu và sku hiệu quả tối ưu ｜ Nhà Nội Hơi Ồn hihi.mp4"
+  },
+  {
+    "title": "Section 90: Tư duy kiến trúc elasticsearch cho kỹ sư BE (1)",
+    "url": "https://www.youtube.com/watch?v=61LBcDdpCr4",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 90： Tư duy kiến trúc elasticsearch cho kỹ sư BE (1).mp4"
+  },
+  {
+    "title": "Section 91: Giờ hãy thêm elasticSearch vào CV để chuẩn bị cuộc phỏng vấn chất lượng CAO",
+    "url": "https://www.youtube.com/watch?v=nG8DOtbNO0k",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 91： Giờ hãy thêm elasticSearch vào CV để chuẩn bị cuộc phỏng vấn chất lượng CAO.mp4"
+  },
+  {
+    "title": "Redis: Cạm bẫy đầu tiên khi sử dụng cache mà một backend xuất sắc phải xử lý 100 triệu requests",
+    "url": "https://www.youtube.com/watch?v=BLfrJxvA2aY",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Redis： Cạm bẫy đầu tiên khi sử dụng cache mà một backend xuất sắc phải xử lý 100 triệu requests.mp4"
+  },
+  {
+    "title": "Section 98: Thực hành cạm bẫy CACHE PENETRATION với Redis vs Nodejs",
+    "url": "https://www.youtube.com/watch?v=ZeyO1_DwkfM",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 98： Thực hành cạm bẫy CACHE PENETRATION với Redis vs Nodejs.mp4"
+  },
+  {
+    "title": "Section 104: Thao tác cần biết khắc phục LỖI MYSQL trực tuyến | MySQL Series",
+    "url": "https://www.youtube.com/watch?v=Jn26PlOEkVE",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 104： Thao tác cần biết khắc phục LỖI MYSQL trực tuyến ｜ MySQL Series.mp4"
+  },
+  {
+    "title": "Section 106: LÀM CHỦ MYSQL (5) - HIỂU NHẦM VỀ INDEX PRIMARY, UNIQUE, FULLTEXT?",
+    "url": "https://www.youtube.com/watch?v=7pfVaIBSZ_U",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 106： LÀM CHỦ MYSQL (5) - HIỂU NHẦM VỀ INDEX PRIMARY, UNIQUE, FULLTEXT？.mp4"
+  },
+  {
+    "title": "Section 108: LÀM CHỦ MYSQL - Nguyên tắc sử dụng 6 loại index và công thức tối ưu.",
+    "url": "https://www.youtube.com/watch?v=BosoW1zMzuw",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 108： LÀM CHỦ MYSQL - Nguyên tắc sử dụng 6 loại index và công thức tối ưu..mp4"
+  },
+  {
+    "title": "Section 110: LÀM CHỦ MYSQL - Nguyên tắc ACID, sự cô lập vs cơ chế trong transaction HIỂU SÂU",
+    "url": "https://www.youtube.com/watch?v=ylidVS4HvtE",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 110： LÀM CHỦ MYSQL - Nguyên tắc ACID, sự cô lập vs cơ chế trong transaction HIỂU SÂU.mp4"
+  },
+  {
+    "title": "Section 112: LÀM CHỦ MYSQL - 4 mức độ cô lập trong Transaction, hiệu suất NHANH hay CHẬM tùy bạn...",
+    "url": "https://www.youtube.com/watch?v=VWXZUWzT46U",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 112： LÀM CHỦ MYSQL - 4 mức độ cô lập trong Transaction, hiệu suất NHANH hay CHẬM tùy bạn....mp4"
+  },
+  {
+    "title": "Section 114: LÀM CHỦ MYSQL - JSON trong MYSQL Nó rất tốt thưa quý vị",
+    "url": "https://www.youtube.com/watch?v=tPDdm3N2Yq0",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Section 114： LÀM CHỦ MYSQL - JSON trong MYSQL Nó rất tốt thưa quý vị.mp4"
+  },
+  {
+    "title": "NestJS (32): Hệ thống thực hiện nhất quán dữ liệu WRITE CACHE và MYSQL với 4 kịch bản phức tạp sau",
+    "url": "https://www.youtube.com/watch?v=MMczVW-4jb4",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (32)： Hệ thống thực hiện nhất quán dữ liệu WRITE CACHE và MYSQL với 4 kịch bản phức tạp sau.mp4"
+  },
+  {
+    "title": "Ecommerce Microservices (48): Gateway Service | Security OneToken | Đến lúc xoá RefreshToken |  03",
+    "url": "https://www.youtube.com/watch?v=zKv3c4Aiu5I",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Ecommerce Microservices (48)： Gateway Service ｜ Security OneToken ｜ Đến lúc xoá RefreshToken ｜  03.mp4"
+  },
+  {
+    "title": "Ecommerce Microservices NestJS (47): Gateway Service | Security JTW | 02",
+    "url": "https://www.youtube.com/watch?v=3Mc3HNiFywc",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Ecommerce Microservices NestJS (47)： Gateway Service ｜ Security JTW ｜ 02.mp4"
+  },
+  {
+    "title": "Ecommerce Microservices NestJS (46): Gateway Service | Security 01",
+    "url": "https://www.youtube.com/watch?v=1YJdusUzLF0",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Ecommerce Microservices NestJS (46)： Gateway Service ｜ Security 01.mp4"
+  },
+  {
+    "title": "Ecommerce Microservices NestJS (44): Sourcecode trybuy | order, payment, user, product, chat",
+    "url": "https://www.youtube.com/watch?v=tAFMP5-TbcA",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Ecommerce Microservices NestJS (44)： Sourcecode trybuy ｜ order, payment, user, product, chat.mp4"
+  },
+  {
+    "title": "Ecommerce Microservices NestJS (43): Chọn PostgreSQL cho Inventory thay vì MySQL Để tôi show cho bạn",
+    "url": "https://www.youtube.com/watch?v=V1Dg1nSouUc",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Ecommerce Microservices NestJS (43)： Chọn PostgreSQL cho Inventory thay vì MySQL Để tôi show cho bạn.mp4"
+  },
+  {
+    "title": "Ecommerce Microservices NestJS (41): 10.000 req/s khi order call inventory chọn TCP, Rest, Webhook?",
+    "url": "https://www.youtube.com/watch?v=X6ED_5s5onQ",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Ecommerce Microservices NestJS (41)： 10.000 req⧸s khi order call inventory chọn TCP, Rest, Webhook？.mp4"
+  },
+  {
+    "title": "Ecommerce Microservices NestJS (41): Scale PlaceOrder() sử dụng MQ với Fanout Exchange | Junior...",
+    "url": "https://www.youtube.com/watch?v=x5lrfB_KAMc",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Ecommerce Microservices NestJS (41)： Scale PlaceOrder() sử dụng MQ với Fanout Exchange ｜ Junior....mp4"
+  },
+  {
+    "title": "NestJS (40): Thực hành Order Process (payment, reward, inventory) trong Microservices | 2 NodeA, B",
+    "url": "https://www.youtube.com/watch?v=RI3i8s16384",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (40)： Thực hành Order Process (payment, reward, inventory) trong Microservices ｜ 2 NodeA, B.mp4"
+  },
+  {
+    "title": "NestJS (39)  | Microservices: Authenticate Multiple Service",
+    "url": "https://www.youtube.com/watch?v=_bwRXZx0Fk4",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (39)  ｜ Microservices： Authenticate Multiple Service.mp4"
+  },
+  {
+    "title": "NestJS (37): Microservice System | Quản lý Git Code và thế nào khi có nhiều Services tham gia?",
+    "url": "https://www.youtube.com/watch?v=AE9CTCbrG2w",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (37)： Microservice System ｜ Quản lý Git Code và thế nào khi có nhiều Services tham gia？.mp4"
+  },
+  {
+    "title": "NestJS (34): Các nền tảng Social triển khai LIKE/UNLIKE thế nào? Cách làm này nhiều cạm bẫy?",
+    "url": "https://www.youtube.com/watch?v=git5LEvshG4",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (34)： Các nền tảng Social triển khai LIKE⧸UNLIKE thế nào？ Cách làm này nhiều cạm bẫy？.mp4"
+  },
+  {
+    "title": "NestJS (31): Đến lúc tích hợp Cache tăng QPS, TPS trong hệ thống lưu lượng truy cập cao ĐÚNG NHẤT",
+    "url": "https://www.youtube.com/watch?v=87eviq_Oz4k",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (31)： Đến lúc tích hợp Cache tăng QPS, TPS trong hệ thống lưu lượng truy cập cao ĐÚNG NHẤT.mp4"
+  },
+  {
+    "title": "NestJS (28): Cách các Hệ Thống vừa và nhỏ Phân Quyền? Triển khai Token và ACL",
+    "url": "https://www.youtube.com/watch?v=r---B8OW1fI",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (28)： Cách các Hệ Thống vừa và nhỏ Phân Quyền？ Triển khai Token và ACL.mp4"
+  },
+  {
+    "title": "NestJS (27): Security vs Permission JWT MySQL TypeORM",
+    "url": "https://www.youtube.com/watch?v=eIYVH2irhF4",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (27)： Security vs Permission JWT MySQL TypeORM.mp4"
+  },
+  {
+    "title": "NestJS (25): BUID API tìm kiếm TỶ sản phẩm trên eCommerce với thiết kế chuẩn trong ELASTICSEARCH",
+    "url": "https://www.youtube.com/watch?v=sQb9aHBOVvs",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (25)： BUID API tìm kiếm TỶ sản phẩm trên eCommerce với thiết kế chuẩn trong ELASTICSEARCH.mp4"
+  },
+  {
+    "title": "NestJS (24): Prisma thành thạo Schema, ApiDocs, OnetoOne, OntoMany, ManytoMany",
+    "url": "https://www.youtube.com/watch?v=i0R0NjmQuqI",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (24)： Prisma thành thạo Schema, ApiDocs, OnetoOne, OntoMany, ManytoMany.mp4"
+  },
+  {
+    "title": "NestJS (23): Cơ bản đến thành thạo PRISMA. Vì sao có thế thay thế TypeORM ???",
+    "url": "https://www.youtube.com/watch?v=DHsXjMlLcr8",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (23)： Cơ bản đến thành thạo PRISMA. Vì sao có thế thay thế TypeORM ？？？.mp4"
+  },
+  {
+    "title": "NestJS (22): 5 PHÚT TRẢI LÒNG và Cách tích hợp CHUẨN TypeORM vào NestJS - Nên dùng Repo",
+    "url": "https://www.youtube.com/watch?v=XGoVsC1YLL8",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (22)： 5 PHÚT TRẢI LÒNG và Cách tích hợp CHUẨN TypeORM vào NestJS - Nên dùng Repo.mp4"
+  },
+  {
+    "title": "NestJS (21): TypeORM vs Migration - Vì sao trong development không nên? Chỉ Migration trong PROD",
+    "url": "https://www.youtube.com/watch?v=-muckznhxEc",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (21)： TypeORM vs Migration - Vì sao trong development không nên？ Chỉ Migration trong PROD.mp4"
+  },
+  {
+    "title": "NestJS (20): TypeORM - ManyToMany. Vì sao mối quan hệ này luôn phải có Bảng Trung Gian..",
+    "url": "https://www.youtube.com/watch?v=y_gSwrnTTWo",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (20)： TypeORM - ManyToMany. Vì sao mối quan hệ này luôn phải có Bảng Trung Gian...mp4"
+  },
+  {
+    "title": "NestJS (19): TypeORM - OneToMany, ManyToOne - Người mới thường mắc 3 điều sau",
+    "url": "https://www.youtube.com/watch?v=UPljKC830qg",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (19)： TypeORM - OneToMany, ManyToOne - Người mới thường mắc 3 điều sau.mp4"
+  },
+  {
+    "title": "NestJS (18): TypeORM - OneToOne - Vì sao Foreign Key ít được sử dụng với các dự án",
+    "url": "https://www.youtube.com/watch?v=Sdw3SLu6dZ8",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (18)： TypeORM - OneToOne - Vì sao Foreign Key ít được sử dụng với các dự án.mp4"
+  },
+  {
+    "title": "NestJS (15): Mẹo tối ưu Dockerfile của dự án, hãy xem kỹ về kỹ thuật này...",
+    "url": "https://www.youtube.com/watch?v=tVWIAfM4Tbw",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (15)： Mẹo tối ưu Dockerfile của dự án, hãy xem kỹ về kỹ thuật này....mp4"
+  },
+  {
+    "title": "NestJS (14): Làm việc với Dockerfile đầu tiên như thế nào đối với FE qua FS và những chú ý của DEV",
+    "url": "https://www.youtube.com/watch?v=8uA1l5kb9e4",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (14)： Làm việc với Dockerfile đầu tiên như thế nào đối với FE qua FS và những chú ý của DEV.mp4"
+  },
+  {
+    "title": "NestJS (13): FrontEnd bắt đầu hình thành FullStack với Docker Desktop, đừng đốt cháy giai đoạn...",
+    "url": "https://www.youtube.com/watch?v=mw1FLun0_7Q",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (13)： FrontEnd bắt đầu hình thành FullStack với Docker Desktop, đừng đốt cháy giai đoạn....mp4"
+  },
+  {
+    "title": "NestJS (12): Tích hợp Winston vào API - Hệ thống Logger mạnh mẽ hơn bao giờ hết | File Search Format",
+    "url": "https://www.youtube.com/watch?v=akymw_jIYFk",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (12)： Tích hợp Winston vào API - Hệ thống Logger mạnh mẽ hơn bao giờ hết ｜ File Search Format.mp4"
+  },
+  {
+    "title": "NestJS (11): 6 cấp độ ghi LOGs và vì sao Nodejs lại sử dụng Winston một cách mạnh mẽ về Logger",
+    "url": "https://www.youtube.com/watch?v=TTbaZG6e-mg",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (11)： 6 cấp độ ghi LOGs và vì sao Nodejs lại sử dụng Winston một cách mạnh mẽ về Logger.mp4"
+  },
+  {
+    "title": "NestJS (10): Hệ thống Logger trong Nestjs rất hoàn thiện như thế nào?",
+    "url": "https://www.youtube.com/watch?v=YredrrdHJA8",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\NestJS (10)： Hệ thống Logger trong Nestjs rất hoàn thiện như thế nào？.mp4"
+  },
+  {
+    "title": "Kafka giảm Performance xuống 60% vì hiểu sai về THREAD của một SENIOR trong hệ thống IoT.",
+    "url": "https://www.youtube.com/watch?v=ykIKPK6b3G4",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Kafka giảm Performance xuống 60% vì hiểu sai về THREAD của một SENIOR trong hệ thống IoT..mp4"
+  },
+  {
+    "title": "Advanced RabbitMQ (05): Fanout Exchange in Microservices System (⭐⭐⭐⭐) | Up source",
+    "url": "https://www.youtube.com/watch?v=ps_P4haORpc",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Advanced RabbitMQ (05)： Fanout Exchange in Microservices System (⭐⭐⭐⭐) ｜ Up source.mp4"
+  },
+  {
+    "title": "Advanced RabbitMQ (04): Work Queue | The Power MQ | Place Order Event (⭐⭐⭐)",
+    "url": "https://www.youtube.com/watch?v=HOuJBE8cskc",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Advanced RabbitMQ (04)： Work Queue ｜ The Power MQ ｜ Place Order Event (⭐⭐⭐).mp4"
+  },
+  {
+    "title": "Advanced RabbitMQ (03): Hello Queue | When Messages are Lost?? (⭐⭐)",
+    "url": "https://www.youtube.com/watch?v=pIm7KOdzPFI",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Advanced RabbitMQ (03)： Hello Queue ｜ When Messages are Lost？？ (⭐⭐).mp4"
+  },
+  {
+    "title": "Advanced RabbitMQ (02): New Instance (Docker, Cloud) | Add User | Add Permission | Virtual host (⭐⭐)",
+    "url": "https://www.youtube.com/watch?v=S5A2pwixCWk",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Advanced RabbitMQ (02)： New Instance (Docker, Cloud) ｜ Add User ｜ Add Permission ｜ Virtual host (⭐⭐).mp4"
+  },
+  {
+    "title": "Advanced RabbitMQ (01): Tại sao phải là RabbitMQ? Tôi không sử dụng? (⭐⭐)",
+    "url": "https://www.youtube.com/watch?v=YgZb7q1Z0Dg",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Advanced RabbitMQ (01)： Tại sao phải là RabbitMQ？ Tôi không sử dụng？ (⭐⭐).mp4"
+  },
+  {
+    "title": "Kafka (08): SCALE PARTTION | x3 PERFORMANCE (⭐⭐⭐⭐⭐)",
+    "url": "https://www.youtube.com/watch?v=7TO7ogwgWss",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Kafka (08)： SCALE PARTTION ｜ x3 PERFORMANCE (⭐⭐⭐⭐⭐).mp4"
+  },
+  {
+    "title": "Kafka (07): TEST BENCHMARK BENCHMARK TEST MILIONS DATA vs ORDERED (⭐⭐⭐⭐)",
+    "url": "https://www.youtube.com/watch?v=-JUCzDDHOmo",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Kafka (07)： TEST BENCHMARK BENCHMARK TEST MILIONS DATA vs ORDERED (⭐⭐⭐⭐).mp4"
+  },
+  {
+    "title": "Kafka (06): ONE PARTITION vs MULTI THREAD (⭐⭐⭐)",
+    "url": "https://www.youtube.com/watch?v=fZafqe9yZNI",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Kafka (06)： ONE PARTITION vs MULTI THREAD (⭐⭐⭐).mp4"
+  },
+  {
+    "title": "KafKa (05): MISTAKE MSG ORDER IS WRONG (⭐⭐⭐)",
+    "url": "https://www.youtube.com/watch?v=yiXL052rNNI",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\KafKa (05)： MISTAKE MSG ORDER IS WRONG (⭐⭐⭐).mp4"
+  },
+  {
+    "title": "KafKa(4): HI BOSS, LAG IN KAFA CONSUMER (⭐⭐⭐)",
+    "url": "https://www.youtube.com/watch?v=z3TPi-UDmeY",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\KafKa(4)： HI BOSS, LAG IN KAFA CONSUMER (⭐⭐⭐).mp4"
+  },
+  {
+    "title": "Kafka (3) : PROCESSING MULTIPLE ORDERS ON SALE DAYS (⭐⭐⭐⭐)",
+    "url": "https://www.youtube.com/watch?v=OAPiWUYy9BQ",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Kafka (3) ： PROCESSING MULTIPLE ORDERS ON SALE DAYS (⭐⭐⭐⭐).mp4"
+  },
+  {
+    "title": "Kafka (2): SEND MULTIPLE ORDERS ON SALE DAYS (⭐⭐⭐)",
+    "url": "https://www.youtube.com/watch?v=71Bx0Qfs4JQ",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Kafka (2)： SEND MULTIPLE ORDERS ON SALE DAYS (⭐⭐⭐).mp4"
+  },
+  {
+    "title": "Kafka (1): GUIDE and INSTANCE BROKER vs PARTITION (⭐⭐⭐)",
+    "url": "https://www.youtube.com/watch?v=q5leZEPVSkU",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Kafka (1)： GUIDE and INSTANCE BROKER vs PARTITION (⭐⭐⭐).mp4"
+  },
+  {
+    "title": "Kafka: Ứng dụng thực tế hệ thống MUA BÁN Backend API",
+    "url": "https://www.youtube.com/watch?v=UIFWVisug1M",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Kafka： Ứng dụng thực tế hệ thống MUA BÁN Backend API.mp4"
+  },
+  {
+    "title": "Kafka: Đây là 7 thứ đủ để bắt đầu cuộc chiến TOPIC, PARTITIONs và Consumer Group",
+    "url": "https://www.youtube.com/watch?v=a7lmP5hdgB0",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Kafka： Đây là 7 thứ đủ để bắt đầu cuộc chiến TOPIC, PARTITIONs và Consumer Group.mp4"
+  },
+  {
+    "title": "Tại sao 80% lập trình viên tìm đến RabbitMQ cũng chỉ để sử dụng mô hình này NHANH GỌN LẸ.",
+    "url": "https://www.youtube.com/watch?v=lNs-wtsyBu8",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Tại sao 80% lập trình viên tìm đến RabbitMQ cũng chỉ để sử dụng mô hình này NHANH GỌN LẸ..mp4"
+  },
+  {
+    "title": "RabbitMQ (5) Đỉnh cao mô hình Publish Subscribe với Node.js và so sánh với mô hình của Redis.",
+    "url": "https://www.youtube.com/watch?v=IMAzNKNUpZc",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\RabbitMQ (5) Đỉnh cao mô hình Publish Subscribe với Node.js và so sánh với mô hình của Redis..mp4"
+  },
+  {
+    "title": "RabbitMQ (4) Giải quyết vấn đề độ tin cậy trong queue (noAck, ttl, durable, persistent) phía Backend",
+    "url": "https://www.youtube.com/watch?v=az2VNMgNFrk",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\RabbitMQ (4) Giải quyết vấn đề độ tin cậy trong queue (noAck, ttl, durable, persistent) phía Backend.mp4"
+  },
+  {
+    "title": "RabbitMQ (3) Cách Send và Receive một Message vào QUEUE với NODEJS Và tôi đã thấy một số vấn đề sau.",
+    "url": "https://www.youtube.com/watch?v=--8OCUUqzTk",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\RabbitMQ (3) Cách Send và Receive một Message vào QUEUE với NODEJS Và tôi đã thấy một số vấn đề sau..mp4"
+  },
+  {
+    "title": "RabbitMQ (2) bỏ qua cơ bản giờ đến lúc phải THÀNH THẠO tính năng Dashboard với CLOUD FREE và DOCKER",
+    "url": "https://www.youtube.com/watch?v=WVPNHLNu5m4",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\RabbitMQ (2) bỏ qua cơ bản giờ đến lúc phải THÀNH THẠO tính năng Dashboard với CLOUD FREE và DOCKER.mp4"
+  },
+  {
+    "title": "Chính xác là tôi nên sử dụng MQ khi nào? Giờ bạn đã hiểu về Message Queue | Series RabbitMQ Node.js",
+    "url": "https://www.youtube.com/watch?v=DQRj7I3PcuM",
+    "file": "C:\\code\\ToolDownloadVideoYoutobe\\output\\Chính xác là tôi nên sử dụng MQ khi nào？ Giờ bạn đã hiểu về Message Queue ｜ Series RabbitMQ Node.js.mp4"
+  }
 ]

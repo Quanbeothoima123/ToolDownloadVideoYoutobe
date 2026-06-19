@@ -5,15 +5,20 @@ import tkinter as tk
 from tkinter import ttk, messagebox, filedialog
 from yt_dlp import YoutubeDL
 
-FFMPEG_DIR = os.path.join("ffmpeg", "bin")
-OUTPUT_DIR = "output"
-HISTORY_FILE = "history.json"
-COOKIES_FILE = "cookies.txt"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+FFMPEG_DIR = os.path.join(BASE_DIR, "ffmpeg", "bin")
+FFMPEG_EXE = os.path.join(FFMPEG_DIR, "ffmpeg.exe")
+OUTPUT_DIR = os.path.join(BASE_DIR, "output")
+HISTORY_FILE = os.path.join(BASE_DIR, "history.json")
+COOKIES_FILE = os.path.join(BASE_DIR, "cookies.txt")
+BEST_QUALITY_FORMAT = (
+    "bv*[height>=1080]+ba/b[height>=1080]/"
+    "bv*+ba/b"
+)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Thêm ffmpeg vào PATH hệ thống (giống tool Shorts đang hoạt động tốt)
-_ffmpeg_abs = os.path.abspath(FFMPEG_DIR)
-os.environ["PATH"] = _ffmpeg_abs + os.pathsep + os.environ.get("PATH", "")
+os.environ["PATH"] = FFMPEG_DIR + os.pathsep + os.environ.get("PATH", "")
 
 stop_flag = False
 BROWSERS = ["chrome", "firefox", "edge", "brave", "opera", "chromium", "vivaldi"]
@@ -23,6 +28,9 @@ cookies_file_path = COOKIES_FILE
 
 
 # ─── History ──────────────────────────────────────────────────────────────────
+
+def has_cookie_file(path):
+    return os.path.isfile(path) and os.path.getsize(path) > 0
 
 def load_history():
     if os.path.exists(HISTORY_FILE):
@@ -38,24 +46,47 @@ def save_history(history):
         json.dump(history, f, ensure_ascii=False, indent=2)
 
 def is_duplicate(video_url):
-    return video_url in load_history()
+    for entry in load_history():
+        url = entry.get("url") if isinstance(entry, dict) else entry
+        if url == video_url:
+            file_path = entry.get("file") if isinstance(entry, dict) else None
+            return bool(file_path and os.path.exists(file_path))
+    return False
 
-def add_to_history(video_url):
+def add_to_history(video_url, title="", file_path=""):
     history = load_history()
-    if video_url not in history:
-        history.append(video_url)
-        save_history(history)
+    for entry in history:
+        if isinstance(entry, dict) and entry.get("url") == video_url:
+            entry.update({"title": title, "url": video_url, "file": file_path})
+            save_history(history)
+            return
+    history.append({"title": title, "url": video_url, "file": file_path})
+    save_history(history)
 
 
 # ─── Cookies ──────────────────────────────────────────────────────────────────
 
 def get_ydl_opts_base():
-    opts = {'quiet': True}
-    if cookie_mode == "file" and os.path.exists(cookies_file_path):
+    opts = {
+        'quiet': True,
+        'js_runtimes': {'node': {}},
+        'remote_components': {'ejs:github': {}},
+    }
+    if cookie_mode == "file" and has_cookie_file(cookies_file_path):
         opts['cookiefile'] = cookies_file_path
     elif cookie_mode == "browser":
         opts['cookiesfrombrowser'] = (selected_browser,)
     return opts
+
+
+def describe_cookie_source():
+    if cookie_mode == "file":
+        if os.path.exists(cookies_file_path):
+            return f"file={cookies_file_path} size={os.path.getsize(cookies_file_path)}"
+        return f"file={cookies_file_path} missing"
+    if cookie_mode == "browser":
+        return f"browser={selected_browser}"
+    return "none"
 
 
 def export_cookies_from_browser():
@@ -76,7 +107,7 @@ def export_cookies_from_browser():
             with YoutubeDL(ydl_opts) as ydl:
                 ydl.extract_info("https://www.youtube.com", download=False)
 
-            if os.path.exists(out_file):
+            if has_cookie_file(out_file):
                 set_status(f"Xuất cookies OK: {out_file}")
                 cookie_mode_var.set("file")
                 cookies_path_var.set(out_file)
@@ -86,7 +117,7 @@ def export_cookies_from_browser():
                     "Tool sẽ dùng file này, không cần đóng trình duyệt nữa.")
             else:
                 set_status("Không xuất được cookies.")
-                messagebox.showerror("Lỗi", "Không tạo được file cookies.txt.")
+                messagebox.showerror("Lỗi", "Không tạo được file cookies.txt hoặc file cookies đang rỗng.")
         except Exception as e:
             err = str(e)
             set_status("Lỗi xuất cookies.")
@@ -134,21 +165,90 @@ def get_video_urls(url):
         else:
             return [info.get('webpage_url') or info.get('url') or url]
 
+
+def describe_format(info):
+    if not info:
+        return "không có thông tin format"
+
+    formats = info.get("requested_downloads") or info.get("requested_formats") or [info]
+    details = []
+    for fmt in formats:
+        height = fmt.get("height") or "?"
+        fps = fmt.get("fps")
+        fps_text = f"{fps}fps" if fps else "fps?"
+        codec = fmt.get("vcodec") or fmt.get("acodec") or "codec?"
+        ext = fmt.get("ext") or "ext?"
+        format_id = fmt.get("format_id") or "id?"
+        if fmt.get("vcodec") != "none":
+            details.append(f"{height}p {fps_text} {codec} ({ext}, {format_id})")
+        elif fmt.get("acodec") != "none":
+            details.append(f"audio {codec} ({ext}, {format_id})")
+
+    return " + ".join(details) if details else "không đọc được format"
+
+
+def summarize_available_formats(info):
+    formats = info.get("formats") or []
+    video_formats = []
+    audio_formats = []
+
+    for fmt in formats:
+        format_id = fmt.get("format_id") or "id?"
+        ext = fmt.get("ext") or "ext?"
+        height = fmt.get("height")
+        fps = fmt.get("fps")
+        vcodec = fmt.get("vcodec")
+        acodec = fmt.get("acodec")
+        tbr = fmt.get("tbr") or 0
+
+        if vcodec and vcodec != "none":
+            fps_text = f"{fps}fps" if fps else ""
+            video_formats.append((height or 0, tbr, f"{format_id}:{height or '?'}p{fps_text}:{ext}:{vcodec}"))
+        elif acodec and acodec != "none":
+            audio_formats.append((tbr, f"{format_id}:audio:{ext}:{acodec}"))
+
+    video_formats.sort(reverse=True)
+    audio_formats.sort(reverse=True)
+    video_text = ", ".join(item[2] for item in video_formats[:12]) or "none"
+    audio_text = ", ".join(item[1] for item in audio_formats[:6]) or "none"
+    return f"video[{video_text}] audio[{audio_text}] total={len(formats)}"
+
+
+def get_downloaded_files(info):
+    paths = []
+    candidates = []
+    for item in info.get("requested_downloads") or []:
+        candidates.extend([item.get("filepath"), item.get("filename")])
+    candidates.extend([info.get("filepath"), info.get("_filename")])
+
+    for path in candidates:
+        if path and os.path.exists(path) and os.path.isfile(path):
+            paths.append(path)
+    return paths
+
+
 def download_video(url):
     ydl_opts = {
         **get_ydl_opts_base(),
-        'no_warnings': True,
-        'format': 'bestvideo+bestaudio/best',
+        'quiet': False,
+        'no_warnings': False,
+        'ffmpeg_location': FFMPEG_DIR,
         'outtmpl': os.path.join(OUTPUT_DIR, '%(title)s.%(ext)s'),
+        'format': BEST_QUALITY_FORMAT,
         'merge_output_format': 'mp4',
-        'postprocessors': [{
-            'key': 'FFmpegVideoConvertor',
-            'preferedformat': 'mp4',
-        }],
+        'ignoreerrors': False,
     }
     with YoutubeDL(ydl_opts) as ydl:
+        probe_info = ydl.extract_info(url, download=False)
+        print(f"[COOKIE] {describe_cookie_source()}")
+        print(f"[AVAILABLE FORMATS] {summarize_available_formats(probe_info)}")
         info = ydl.extract_info(url, download=True)
-        return info.get('title', 'video')
+        if info is None:
+            return None, "không có thông tin format", []
+        downloaded_files = get_downloaded_files(info)
+        if not downloaded_files:
+            raise RuntimeError("yt-dlp không tạo file hoàn chỉnh trong thư mục output.")
+        return info.get('title', 'video'), describe_format(info), downloaded_files
 
 
 # ─── Download thread ──────────────────────────────────────────────────────────
@@ -161,10 +261,17 @@ def run_download():
         messagebox.showerror("Lỗi", "Vui lòng nhập link YouTube")
         return
 
-    if cookie_mode == "file" and not os.path.exists(cookies_file_path):
+    if cookie_mode == "file" and not has_cookie_file(cookies_file_path):
         messagebox.showerror("Thiếu cookies",
-            "Không tìm thấy file cookies.txt.\n"
-            "Hãy bấm 'Xuất cookies' hoặc 'Chọn file...'")
+            "Không tìm thấy file cookies.txt hợp lệ hoặc file đang rỗng.\n"
+            "Video members-only cần cookies của tài khoản đã có quyền xem.")
+        return
+
+    if not os.path.exists(FFMPEG_EXE):
+        messagebox.showerror("Thiếu FFmpeg",
+            f"Không tìm thấy FFmpeg tại:\n{FFMPEG_EXE}\n\n"
+            "Không có FFmpeg thì không ghép được best video + best audio, "
+            "rất dễ chỉ tải bản một-file chất lượng thấp.")
         return
 
     set_ui_state("downloading")
@@ -189,6 +296,7 @@ def run_download():
 
     total = len(video_urls)
     downloaded, skipped, failed = [], [], []
+    downloaded_formats = []
     progress_bar["maximum"] = total
 
     for idx, v_url in enumerate(video_urls, start=1):
@@ -202,11 +310,15 @@ def run_download():
             continue
         set_status(f"Đang tải {idx}/{total}...")
         try:
-            title = download_video(v_url)
-            add_to_history(v_url)
+            title, format_info, files = download_video(v_url)
+            add_to_history(v_url, title or "", files[0])
             downloaded.append(title)
+            downloaded_formats.append(f"{title}: {format_info}")
+            print(f"[FORMAT] {title}: {format_info}")
+            print(f"[FILE] {files[0]}")
+            set_status(f"Đã tải {idx}/{total}: {format_info}")
         except Exception as e:
-            failed.append(v_url)
+            failed.append(f"{v_url}: {e}")
             print(f"[ERROR] {v_url}: {e}")
         progress_bar["value"] = idx
 
@@ -215,6 +327,11 @@ def run_download():
         msg += f"\n⏭ Bỏ qua (đã tải): {len(skipped)} video."
     if failed:
         msg += f"\n❌ Lỗi: {len(failed)} video."
+        msg += "\n\nLỗi đầu tiên:\n" + failed[0]
+    if downloaded_formats:
+        msg += "\n\nFormat đã tải:\n" + "\n".join(downloaded_formats[:5])
+        if len(downloaded_formats) > 5:
+            msg += f"\n... và {len(downloaded_formats) - 5} video khác"
     set_status("Hoàn tất!" if not stop_flag else "Đã dừng.")
     messagebox.showinfo("Kết quả", msg)
     set_ui_state("idle")
@@ -250,10 +367,18 @@ def view_history():
         messagebox.showinfo("Lịch sử", "Chưa có video nào được tải.")
         return
     win = tk.Toplevel(root)
-    win.title("Lịch sử tải")
-    win.geometry("600x400")
+    win.title(f"Lịch sử tải ({len(history)} video)")
+    win.geometry("780x460")
     txt = tk.Text(win, wrap="word")
-    txt.insert("1.0", "\n".join(history[-30:]))
+    lines = []
+    for entry in history[-50:]:
+        if isinstance(entry, dict):
+            title = entry.get("title") or "(chưa có tên)"
+            url   = entry.get("url", "")
+            lines.append(f"{title}\n  {url}")
+        else:
+            lines.append(entry)
+    txt.insert("1.0", "\n\n".join(lines))
     txt.config(state="disabled")
     txt.pack(fill="both", expand=True, padx=10, pady=10)
 
@@ -275,9 +400,9 @@ def on_cookie_mode_change(*args):
     elif cookie_mode == "file":
         frame_file.pack(anchor="w", pady=2, fill="x")
         f = cookies_path_var.get()
-        ok = os.path.exists(f)
+        ok = has_cookie_file(f)
         lbl_status.config(
-            text=("✅ File cookies: " + os.path.basename(f)) if ok else "❌ Chưa có file cookies — xuất hoặc chọn file",
+            text=("✅ File cookies: " + os.path.basename(f)) if ok else "❌ Chưa có file cookies hợp lệ — file rỗng không dùng được",
             fg="green" if ok else "red")
 
 def on_browser_change(*args):
